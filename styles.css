@@ -1,0 +1,47 @@
+ :root { --imss-green:#006341; --imss-dark:#004b32; --imss-light:#eaf5ef; }
+* { scroll-behavior:smooth; }
+body { color:#24323a; background:#fff; }
+.imss-nav { background:var(--imss-green); box-shadow:0 2px 12px #0001; }
+.logo-mark { display:grid; place-items:center; background:white; color:var(--imss-green); font-weight:900; border-radius:8px; width:48px;height:42px;letter-spacing:-1px; }
+.brand-text { font-size:.76rem;line-height:1.15;font-weight:600; }
+.navbar .nav-link { color:#ffffffd9; }
+.navbar .nav-link:hover { color:white; }
+.hero { background:linear-gradient(135deg,#edf8f2,#f5faf7 60%,#fff); }
+.hero .eyebrow,.eyebrow { color:var(--imss-green);font-weight:800;font-size:.76rem;letter-spacing:.12em; }
+.hero-panel { background:white;border:1px solid #dcebe3;border-radius:24px;padding:2rem;box-shadow:0 16px 40px #064b3212; }
+.hero-icon { width:82px;height:82px;border-radius:22px;background:var(--imss-light);display:grid;place-items:center;color:var(--imss-green);font-size:2.6rem;margin-bottom:1rem; }
+.section-padding { padding:4.5rem 0; }
+.service-card { height:100%;background:#fff;border:1px solid #e6ece8;border-radius:18px;padding:1.4rem;transition:transform .2s,box-shadow .2s; }
+.service-card:hover { transform:translateY(-4px);box-shadow:0 12px 28px #0000000c; }
+.service-card p { color:#687780;margin-bottom:0;font-size:.92rem; }
+.service-icon { font-size:2rem;margin-bottom:.8rem; }
+.login-section { background:#f5f8f6; }
+.hidden { display:none !important; }
+.stat-card { background:white;border:1px solid #e4ece7;border-radius:16px;padding:1.25rem;box-shadow:0 4px 16px #00000008; }
+.stat-card span { color:#687780;display:block;font-size:.9rem; }
+.stat-card strong { font-size:2rem;color:var(--imss-green); }
+.folio { font-size:1.4rem;font-weight:800;letter-spacing:.06em; }
+.footer { background:#f2f6f4;border-top:1px solid #e3ebe6; }
+.btn-primary { background:var(--imss-green);border-color:var(--imss-green); }
+.btn-primary:hover,.btn-primary:focus { background:var(--imss-dark);border-color:var(--imss-dark); }
+.btn-outline-primary { color:var(--imss-green);border-color:var(--imss-green); }
+.btn-outline-primary:hover { background:var(--imss-green);border-color:var(--imss-green); }
+@media(max-width:576px) { .section-padding{padding:3rem 0}.hero h1{font-size:2.3rem}.brand-text{font-size:.68rem} }
+
+.service-select { border:1px solid #e6ece8; cursor:pointer; color:inherit; background:#fff; font:inherit; }
+.service-select:focus-visible { outline:3px solid #71b99a; outline-offset:3px; }
+.service-select.selected { border-color:var(--imss-green); box-shadow:0 0 0 3px #00634118; background:#f5fbf7; }
+.detail-panel,.doctor-panel { border:1px solid #e2ebe5; border-radius:18px; padding:1.5rem; background:#fff; box-shadow:0 6px 20px #00000007; }
+.doctor-panel { background:linear-gradient(145deg,#f2faf5,#fff); }
+.doctor-avatar { width:64px;height:64px;display:grid;place-items:center;border-radius:50%;background:#e2f2e9;font-size:2rem;margin-top:1rem; }
+.doctor-meta { display:flex; flex-direction:column; gap:.5rem; color:#52636a; }
+#detalleServicios { padding-left:1.2rem; color:#52636a; }
+#detalleServicios li { margin-bottom:.35rem; }
+
+/* Pantalla inicial de autenticación: se muestra antes que la aplicación */
+.login-screen { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem 1rem; background:#f4f8f6; }
+.login-screen .container { width:100%; }
+.login-screen .card { border-radius:12px; }
+.login-screen .form-control { min-height:48px; }
+.login-screen .card-body { padding:clamp(1.5rem,4vw,3rem) !important; }
+.login-screen h3 { font-size:clamp(1.7rem,3vw,2.25rem); }
